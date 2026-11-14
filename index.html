@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplikasi manajemen daftar tugas sederhana.">
+
+    <title>Ruang Produktif | Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Ruang Produktif.</h1>
+        <p>Atur tugasmu, selesaikan satu per satu.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="task-form">
+            <h2>Tambah Tugas</h2>
+
+            <form id="form-tugas">
+                <label for="nama-tugas">Nama Tugas</label>
+                <input
+                    type="text"
+                    id="nama-tugas"
+                    placeholder="Contoh: Belajar JavaScript"
+                >
+
+                <label for="kategori-tugas">Kategori</label>
+                <select id="kategori-tugas">
+                    <option value="">Pilih kategori</option>
+                    <option value="Belajar">Belajar</option>
+                    <option value="Pekerjaan">Pekerjaan</option>
+                    <option value="Pribadi">Pribadi</option>
+                </select>
+
+                <button type="submit">Tambah Tugas</button>
+            </form>
+        </section>
+
+        <section class="task-list">
+            <h2>Daftar Tugas</h2>
+        
+            <input
+                type="text"
+                id="pencarian-tugas"
+                placeholder="Cari nama tugas..."
+            >
+        
+            <div id="daftar-tugas">
+                <p>Belum ada tugas. Yuk, tambahkan tugas pertamamu!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
